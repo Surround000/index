@@ -1,0 +1,559 @@
+/*通用部分*/
+*{
+    margin: 0;
+    padding: 0;
+    font: 13px arial;
+    -webkit-user-select: none;
+}
+html,body{
+    width: 100%;
+    background: #fff;
+}
+ul,li{
+    list-style: none;
+}
+a,a:hover,a:visited,a:target{
+    text-decoration: none;
+}
+.clearfix:before,.clearfix:after{
+    display: block;
+    content: '';
+    clear: both;
+}
+.bold{
+    font-weight: bold;
+}
+/*上部列表部分*/
+.wrap{
+    min-width: 810px;
+    position: relative;
+
+}
+
+.header .headerList .list{
+    width: 370px;
+    float: right;
+    padding-top: 23px;
+    position: relative;
+    margin-right: 96px;;
+
+}
+.header .headerList .list li{
+    float: left;
+    padding-right: 17px;
+    font-size: 13px;
+}
+.headerList .list li a{
+    color: #333;
+    text-decoration: underline;
+}
+.headerList .list li a:hover{
+    color: #00c;
+}
+.header .headerList .list .more{
+    width: 60px;
+    height: 24px;
+    background: #38f;
+    position: absolute;
+    top: 19px;
+    right: -45px;
+    padding-right: 0;
+    line-height: 24px;
+    text-align: center;
+
+}
+.header .headerList .list .more a{
+    color: white;
+    text-decoration: none;
+    cursor: default;
+}
+/*logo部分*/
+.header .logo{
+    width: 270px;
+    height: 129px;
+    //position: absolute;
+    margin: 38px auto;
+
+}
+.header .logo img{
+    width: 270px;
+    height: 129px;
+    border: none;
+    display: block;
+}
+/*search部分*/
+.header .search{
+    width: 644px; ;
+    margin: 25px auto;
+    position: relative;
+}
+.header .search .input{
+    width: 520px;
+    height: 14px;
+    border: 1px solid #b8b8b8;
+    border-right: none;
+    text-align: left;
+    color: #333;
+    font: 16px/18px arial;
+    font-weight: bold;
+    padding: 10px;
+    overflow: hidden;
+}
+.header .search i{
+    display: block;
+    width:18px;
+    height: 16px;
+    background: url("../images/camera_new_679c15cc.png")  0 0 no-repeat;
+    position: absolute;
+    right: 111px;
+    top: 9px;
+}
+.header .search i:hover{
+    background: url("../images/camera_new_679c15cc.png")  0 -20px no-repeat;
+}
+.header .search .a{
+    position: absolute;
+    top: 0;
+    right: 3px;
+    display: block;
+    height: 36px;
+    width: 100px;
+    line-height: 36px;
+    text-align: center;
+    background: #3385ff;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border: none;
+}
+.header .search .a:hover{
+    background: #2868c8;
+}
+.search .dropBox{
+    position: relative;
+}
+.search .dropBox .search-list{
+    background: #fff;
+    width: 540px;
+    text-align: left;
+    position: absolute;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 2;
+}
+.search .dropBox .search-list li{
+    color: #000;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+}
+.search .dropBox .search-list li:hover{
+    background: #f0f0f0;
+}
+/*statument部分*/
+.statument{
+    width: 640px;
+    margin: 250px auto;
+
+}
+.statument .bdPhone,.statument .bdNuomi,.statument .statumentRight{
+    float: left;
+}
+.statument .bdPhone,.statument .bdNuomi{
+    width: 122px;
+    margin-right: 34px;
+    position: relative;
+}
+.statument .bdPhone span,.statument .bdNuomi span{
+    display: block;
+    width:60px ;
+    height:60px;
+}
+.statument .bdPhone span{
+    background: url("../images/zbios_a4b2d86f.png");
+}
+.statument .bdNuomi span{
+    background: url("../images/nuomi_510f7472.png");
+}
+.statument .statementP{
+    width: 53px;
+    position: absolute;
+    top: 13px;
+    left: 70px;
+}
+.statument .statementP i{
+    font-size: 12px;
+    color: #666;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    line-height: 23px;
+}
+.statument .statementP b{
+    font-size: 12px;
+    font-weight:normal;
+    color: #999;
+    line-height: 23px;
+    text-align: left;
+}
+.statument .statumentRight{
+    width: 327px;
+}
+.statument .statumentRight a,.statument .statumentRight p{
+    color:  #999;
+    text-align: left;
+    line-height: 23px;
+    font-size: 12px;
+}
+.statument .statumentRight a{
+    text-decoration: underline;
+    padding-right: 60px;
+    font-size: 12px;
+}
+.statument .statumentRight .no3{
+    padding-right: 0px;
+}
+.statument .statumentRight .p1 a{
+    text-decoration: underline;
+    padding-right: 2px;
+    font-size: 12px;
+}
+.statument .statumentRight .p1,.statument .statumentRight .p2{
+    position: relative;
+}
+.statument .statumentRight .p1 span{
+    display: inline-block;
+    background: url("../images/icons_0e814c16.png")  -600px -96px no-repeat;
+    width: 14px;
+    height: 17px;
+    position: absolute;
+    top: 2px;
+}
+.statument .statumentRight .p2 i{
+    margin-left: 16px;
+}
+.statument .statumentRight .p2 span {
+    display: inline-block;
+    background: url("../images/icons_0e814c16.png") -624px -96px no-repeat;
+    width: 14px;
+    height: 17px;
+    position: absolute;
+    top: 2px;
+}
+.headerList .list .set{
+    position: relative;
+}
+.set div{
+    position:absolute;
+    z-index: 2;
+    display: none;
+}
+.headerList .list .set i,.headerList .list .set em{
+    position: absolute;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    border: 5px solid transparent;
+    border-style: dashed dashed solid dashed;
+    left: 11px;
+}
+.headerList .list .set em{
+    border-bottom-color: #d8d8d8;
+    top: -1px;
+
+}
+.headerList .list .set i{
+    border-bottom-color: #fff;
+    top: 0px;
+
+}
+.headerList .list .set ul{
+    position: absolute;
+    top: 9px;
+    left: -21px;
+    width: 76px;
+    height: 114px;
+    border: 1px solid #d1d1d1;
+    box-shadow: 2px 2px  1px #d1d1d1;
+}
+.headerList .list .set ul li a{
+    font-size: 12px;
+    display: block;
+    height: 29px;
+    width: 76px;
+    line-height: 29px;
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+}
+.headerList .list .set ul li a:hover{
+    color: white;
+    background: #3388ff;
+}
+.list .more .moreList{
+    position: absolute;
+    top:-19px;
+    left: 0;
+    width: 94px;
+    background: #f9f9f9;
+    height: 620px;
+    border-left: 1px solid #e7e7e7;
+    z-index: 1;
+    display: none;
+}
+.list .more .moreList li{
+    width: 72px;
+    padding: 0px;
+    margin-left: 11px;
+    height: 83px;
+    border-bottom: 1px solid #f0f0f0;
+
+}
+.list .more .moreList .moreList1{
+    height: 57px;
+    line-height: 57px;
+
+}
+.list .more .moreList .moreList1 a{
+    color: #333333;
+    cursor: default;
+}
+.list .more .moreList .icon{
+    display: block;
+}
+.list .more .moreList li .icon{
+    background: url("../images/bdbri_icons_2e35e84b.png") no-repeat;
+    margin: 21px 0px 7px 16px;
+}
+.list .more .moreList .moreList2 .icon{
+    width: 40px;
+    height: 24px;
+    background-position: -72px -11px;
+    margin-left: 14px;
+}
+.list .more .moreList .moreList3 .icon{
+    width: 30px;
+    height:32px;
+    background-position: -114px -4px;
+    margin-left: 20px;
+}
+.list .more .moreList .moreList4 .icon{
+    width: 36px;
+    height:36px;
+    background-position: -36px 0;
+    margin-left: 16px;
+}
+.list .more .moreList .moreList5 .icon{
+    width: 30px;
+    height:35px;
+    background-position: -150px 0;
+    margin-left: 20px;
+}
+.list .more .moreList .moreList6 .icon{
+    width: 36px;
+    height:32px;
+    background-position: -184px 0;
+    margin-left: 18px;
+}
+.list .more .moreList .moreList7 .icon{
+    width: 32px;
+    height:33px;
+    background-position: -222px 0;
+    margin-left: 18px;
+}
+.list .more .moreList li .icon{
+    cursor: pointer;
+}
+.list .more .moreList li .text{
+    color: #666;
+    cursor: pointer;
+}
+.list .more .moreList li .text:hover{
+    text-decoration: underline;
+}
+.list .more .moreList .moreList8 a{
+    cursor: pointer;
+    color: #666;
+   display: block;
+    margin-top: 20px;
+}
+.list .more .moreList .moreList8 a:hover{
+    text-decoration: underline;
+}
+.hide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.3);
+    display: none;
+}
+/*登录页*/
+.wrap .logBox{
+    position: absolute;
+    top: 68px;
+    left: 33%;
+    width: 393px;
+    height: 447px;
+    background: #fff;
+    display: none;
+    z-index: 2;
+}
+.logBox .title-dragbable{
+    height: 47px;
+    background: #f7f7f7;
+    position: relative;
+    cursor: move;
+}
+.logBox .title-dragbable .log-logo i{
+    background:url("../images/baidu_logo_24_718a6c4.png")no-repeat ;
+    display: inline-block;
+    width: 24px;
+    height: 29px;
+    vertical-align: -6px;
+    margin-right: 2px;
+}
+.logBox .title-dragbable .log-logo {
+    font-size: 16px;
+    font-family: "宋体";
+    font-weight: 700;
+    color: #666;
+    display: block;
+    padding-left: 18px;
+    line-height: 47px;
+}
+.title-dragbable .close-button a{
+    display: block;
+    background: url("../images/pass_login_icons_e059c37.png");
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    background-position: -56px -48px;
+    position: absolute;
+    top: 17px;
+    right: 21px;
+}
+.title-dragbable .close-button a:hover{
+    background-position: -72px -48px;
+}
+.logBody .mesLog{
+    height: 23px;
+    padding: 27px 18px 0 285px ;
+    float: right
+}
+.logBody .mesLog i{
+    background: url("../images/smsSwitchPhone_68b31bb.png")  0 0 no-repeat;
+    display:inline-block;
+    width: 9px;
+    height: 13px;
+    margin-right: 3px;
+    vertical-align: -2px;
+}
+.logBody .mesLog a{
+    font-size: 12px;
+    font-family: Arial,Helvetica,STHeiti,"宋体";
+    color: #666;
+}
+.logBody .mesLog a:hover{
+    color: #008CD7;
+    text-decoration: underline;
+}
+.logBody .username input,.logBody .password input{
+    width: 350px;
+    height: 42px;
+    margin: 0 0 15px 20px;
+    font-size: 16px;
+}
+.logBody .username span,.logBody .password span{
+
+}
+.logBody .ischeck{
+    margin-left: 19px;
+    position: relative;
+}
+.logBody .ischeck input {
+    width: 13px;
+    height: 12px;
+}
+.logBody .ischeck span{
+    display: inline;
+    color: #666;
+    font-size: 12px;
+    margin-left: 5px;
+}
+.logBody .ischeck a{
+    position: absolute;
+    top: 0px;
+    right:15px;;
+    font-size: 12px;
+    text-decoration: none;
+    color: #1b66c7;
+    font-family: Arial,Helvetica,STHeiti,"宋体"
+}
+.logBody .ischeck a:hover{
+    text-decoration: underline;
+    color: #2e7fdb;
+}
+.logBody .submit{
+    margin: 15px auto;
+    margin-left: 19px;
+    position: relative;
+}
+.logBody .submit input{
+    display: block;
+    width: 350px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #fff;
+    background: #3f89ec;
+    border-radius: 3px;
+    border: 0;
+    cursor: pointer;
+}
+.logBody .submit input:hover{
+    background: #4490f7;
+}
+.logBody .submit span{
+    position: absolute;
+    top:60px;
+    right:15px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #1b66c7;
+    font-family: Arial,Helvetica,STHeiti,"宋体";
+}
+.logBody .submit span:hover{
+    text-decoration: underline;
+}
+.otherLog{
+    margin-top: 65px;
+    border-top: 1px solid #f7f7f7;
+    padding: 20px;
+}
+.otherLog span{
+    color: #666;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 15px;
+}
+.otherLog .QQ,.otherLog .weibo{
+    background: url("../images/pass_login_icons_e059c37.png") no-repeat;
+    display: inline-block;
+    cursor: pointer;
+}
+.otherLog .QQ{
+    width: 22px;
+    height: 22px;
+    background-position: -90px 0;
+    margin-right: 16px;
+}
+.otherLog .weibo{
+    width: 26px;
+    height: 21px;
+    background-position: -64px 0;
+}

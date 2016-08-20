@@ -1,0 +1,3 @@
+
+var fs=require("fs");
+fs.writeFileSync('./imgData.json',JSON.stringify([{"imgSrc":"images/img/newsL1.jpg","desc":"五次参加奥运会里约谢幕 传奇菲鱼23金完美起水"},{"imgSrc":"images/img/newsL2.jpg","desc":"原来奥运冠军穿的运动鞋是3D打印出来的"},{"imgSrc":"images/img/newsL3.jpg","desc":"全世界都认识了菲律宾跳水队！简直是投河自尽"},{"imgSrc":"images/img/newsL4.png","desc":"从世界冠军到无缘决赛 宁泽涛除了颜值还剩下什么"},{"imgSrc":"images/img/newsL5.jpg","desc":"奥运推动现场直播技术革新 8K直播还有多远？"}],"utf-8"));
